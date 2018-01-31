@@ -56,6 +56,6 @@ if [ -z "$PASSWD" ]; then
     read -p "Please enter the password for this file ==> " $PASSWD
 fi
 
-$MOGRIFY -authenticate $PASSWD $FILENAME
+$MOGRIFY -density 300 -authenticate $PASSWD $FILENAME
 
 echo "done"
